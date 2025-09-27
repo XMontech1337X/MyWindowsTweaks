@@ -14,9 +14,9 @@ fltmc > nul 2>&1 || (
 echo]
 echo Enabling Recommends In Start Menu...
 (
-	reg.exe delete "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\Start" /v "HideRecommendedSection"
-	reg.exe delete "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\Education"
-	reg.exe delete "HKLM\SOFTWARE\Policies\Microsoft\Windows\Explorer"
+	reg.exe delete "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\Start" /v "HideRecommendedSection" /f
+	reg.exe delete "HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\Education" /f
+	reg.exe delete "HKLM\SOFTWARE\Policies\Microsoft\Windows\Explorer" /f
 
 	taskkill /f /im explorer.exe
 	start explorer.exe
