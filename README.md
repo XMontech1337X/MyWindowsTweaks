@@ -16,3 +16,5 @@ https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns
 https://github.com/Orbmu2k/nvidiaProfileInspector
 
 https://github.com/ios12checker/Windows-Maintenance-Tool
+
+https://github.com/beeradmoore/dlss-swapper
